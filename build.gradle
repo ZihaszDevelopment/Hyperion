@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+group 'dev.zihasz.hyperion'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
