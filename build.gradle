@@ -3,12 +3,12 @@ plugins {
 }
 
 group 'dev.zihasz.hyperion'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-
+    testCompile 'junit:junit:4.12' // JUnit.
 }
