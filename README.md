@@ -16,14 +16,14 @@
 #### Gradle
 
 ```gradle
+repositories {
+    maven { url 'https://jitpack.io' }
+}
 
+dependencies {
+    implementation 'com.github.zihasz:Hyperion:1.0'
+}
 ```
-
-```xml
-
-```
-
-#### Maven
 
 ## Contributing
 
