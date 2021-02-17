@@ -1,6 +1,6 @@
 package dev.zihasz.hyperion.encryption;
 
-import dev.zihasz.hyperion.base.IEncryption;
+import dev.zihasz.hyperion.api.IEncryption;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -13,14 +13,14 @@ import java.security.spec.KeySpec;
 import java.util.Base64;
 
 public class AES implements IEncryption {
-    public String encrypt (String string, String secret, String salt) {
+    public String encrypt (String string, String key, String salt) {
         try
         {
             byte[] iv = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             IvParameterSpec ivSpec = new IvParameterSpec(iv);
 
             SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
-            KeySpec spec = new PBEKeySpec(secret.toCharArray(), salt.getBytes(), 65536, 256);
+            KeySpec spec = new PBEKeySpec(key.toCharArray(), salt.getBytes(), 65536, 256);
             SecretKey tmp = factory.generateSecret(spec);
             SecretKeySpec secretKey = new SecretKeySpec(tmp.getEncoded(), "AES");
 
@@ -34,14 +34,14 @@ public class AES implements IEncryption {
         }
         return null;
     }
-    public String decrypt (String string, String secret, String salt) {
+    public String decrypt (String string, String key, String salt) {
         try
         {
             byte[] iv = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             IvParameterSpec ivspec = new IvParameterSpec(iv);
 
             SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
-            KeySpec spec = new PBEKeySpec(secret.toCharArray(), salt.getBytes(), 65536, 256);
+            KeySpec spec = new PBEKeySpec(key.toCharArray(), salt.getBytes(), 65536, 256);
             SecretKey tmp = factory.generateSecret(spec);
             SecretKeySpec secretKey = new SecretKeySpec(tmp.getEncoded(), "AES");
 

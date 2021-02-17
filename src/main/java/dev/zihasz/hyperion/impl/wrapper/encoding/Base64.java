@@ -1,6 +1,6 @@
 package dev.zihasz.hyperion.encoding;
 
-import dev.zihasz.hyperion.base.IEncoding;
+import dev.zihasz.hyperion.api.IEncoding;
 
 import java.nio.charset.StandardCharsets;
 
@@ -28,10 +28,10 @@ public class Base64 implements IEncoding {
         return new String(mimeDecode.decode(input.getBytes(StandardCharsets.UTF_8)));
     }
 
-    public String urlEnocde(String url) {
+    public String urlEncode(String url) {
         return urlEncoder.encodeToString(url.getBytes(StandardCharsets.UTF_8));
     }
-    public String urlDeocde(String url) {
+    public String urlDecode(String url) {
         return new String(urlDecoder.decode(url.getBytes(StandardCharsets.UTF_8)));
     }
 }
