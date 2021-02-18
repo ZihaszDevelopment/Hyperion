@@ -1,6 +1,6 @@
-package dev.zihasz.hyperion.encryption;
+package dev.zihasz.hyperion.impl.encryption;
 
-import dev.zihasz.hyperion.api.IEncryption;
+import dev.zihasz.hyperion.api.interfaces.IEncryption;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

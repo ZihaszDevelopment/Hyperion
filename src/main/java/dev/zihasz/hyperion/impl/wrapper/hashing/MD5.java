@@ -1,6 +1,6 @@
 package dev.zihasz.hyperion.impl.wrapper.hashing;
 
-import dev.zihasz.hyperion.api.IHash;
+import dev.zihasz.hyperion.api.interfaces.IHash;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

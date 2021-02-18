@@ -1,4 +1,4 @@
-package dev.zihasz.hyperion.base;
+package dev.zihasz.hyperion.api.interfaces;
 
 public interface IEncoding {
     public String encode(String input);

@@ -1,6 +1,6 @@
-package dev.zihasz.hyperion.hash;
+package dev.zihasz.hyperion.impl.hashing;
 
-import dev.zihasz.hyperion.base.IHash;
+import dev.zihasz.hyperion.api.interfaces.IHash;
 import dev.zihasz.hyperion.util.main.HashUtils;
 import dev.zihasz.hyperion.util.misc.ByteUtils;
 import dev.zihasz.hyperion.util.security.Signing;

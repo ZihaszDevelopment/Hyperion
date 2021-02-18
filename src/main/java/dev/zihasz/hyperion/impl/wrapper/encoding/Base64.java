@@ -1,6 +1,6 @@
-package dev.zihasz.hyperion.encoding;
+package dev.zihasz.hyperion.impl.wrapper.encoding;
 
-import dev.zihasz.hyperion.api.IEncoding;
+import dev.zihasz.hyperion.api.interfaces.IEncoding;
 
 import java.nio.charset.StandardCharsets;
 
