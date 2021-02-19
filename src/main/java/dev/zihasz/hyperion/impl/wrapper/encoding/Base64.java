@@ -5,6 +5,7 @@ import dev.zihasz.hyperion.api.interfaces.IEncoding;
 import java.nio.charset.StandardCharsets;
 
 public class Base64 implements IEncoding {
+
     java.util.Base64.Encoder encoder = java.util.Base64.getEncoder();
     java.util.Base64.Decoder decoder = java.util.Base64.getDecoder();
 
@@ -34,4 +35,5 @@ public class Base64 implements IEncoding {
     public String urlDecode(String url) {
         return new String(urlDecoder.decode(url.getBytes(StandardCharsets.UTF_8)));
     }
+
 }
