@@ -7,4 +7,5 @@ public class AbstractHash implements IHash {
     public String hash(String message) throws Exception {
         return message;
     }
+
 }

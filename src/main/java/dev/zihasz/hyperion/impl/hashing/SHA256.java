@@ -1,9 +1,9 @@
 package dev.zihasz.hyperion.impl.hashing;
 
 import dev.zihasz.hyperion.api.interfaces.IHash;
-import dev.zihasz.hyperion.util.main.HashUtils;
-import dev.zihasz.hyperion.util.misc.ByteUtils;
-import dev.zihasz.hyperion.util.security.Signing;
+import dev.zihasz.hyperion.util.hash.HashUtils;
+import dev.zihasz.hyperion.util.type.ByteUtils;
+import dev.zihasz.hyperion.util.hash.Signing;
 
 public class SHA256 implements IHash {
     private static final int[] K = {

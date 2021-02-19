@@ -1,36 +1,44 @@
-dev/zihasz/hyperion/util/misc/TextUtils.java
- dev.zihasz.hyperion.util.misc.TextUtils
-dev/zihasz/hyperion/wrapper/hash/SHA1.java
- dev.zihasz.hyperion.wrapper.hash.SHA1
-dev/zihasz/hyperion/wrapper/hash/SHA512.java
- dev.zihasz.hyperion.wrapper.hash.SHA512
+dev/zihasz/hyperion/api/interfaces/IEncryption.java
+ dev.zihasz.hyperion.api.interfaces.IEncryption
+dev/zihasz/hyperion/util/hash/Signing.java
+ dev.zihasz.hyperion.util.hash.Signing
 dev/zihasz/hyperion/util/security/SaltUtils.java
  dev.zihasz.hyperion.util.security.SaltUtils
-dev/zihasz/hyperion/util/main/EncryptionUtils.java
- dev.zihasz.hyperion.util.main.EncryptionUtils
-dev/zihasz/hyperion/wrapper/hash/SHA256.java
- dev.zihasz.hyperion.wrapper.hash.SHA256
-dev/zihasz/hyperion/wrapper/hash/MD5.java
- dev.zihasz.hyperion.wrapper.hash.MD5
-dev/zihasz/hyperion/wrapper/hash/SHA384.java
- dev.zihasz.hyperion.wrapper.hash.SHA384
-dev/zihasz/hyperion/util/main/EncodingUtils.java
- dev.zihasz.hyperion.util.main.EncodingUtils
-dev/zihasz/hyperion/encoding/Base64.java
- dev.zihasz.hyperion.encoding.Base64
-dev/zihasz/hyperion/util/misc/ByteUtils.java
- dev.zihasz.hyperion.util.misc.ByteUtils
-dev/zihasz/hyperion/base/IHash.java
- dev.zihasz.hyperion.base.IHash
-dev/zihasz/hyperion/encryption/AES.java
- dev.zihasz.hyperion.encryption.AES
-dev/zihasz/hyperion/util/security/Signing.java
- dev.zihasz.hyperion.util.security.Signing
-dev/zihasz/hyperion/base/IEncryption.java
- dev.zihasz.hyperion.base.IEncryption
-dev/zihasz/hyperion/util/main/HashUtils.java
- dev.zihasz.hyperion.util.main.HashUtils
-dev/zihasz/hyperion/hash/SHA256.java
- dev.zihasz.hyperion.hash.SHA256
-dev/zihasz/hyperion/base/IEncoding.java
- dev.zihasz.hyperion.base.IEncoding
+dev/zihasz/hyperion/impl/wrapper/hashing/SHA256.java
+ dev.zihasz.hyperion.impl.wrapper.hashing.SHA256
+dev/zihasz/hyperion/api/AbstractEncryption.java
+ dev.zihasz.hyperion.api.AbstractEncryption
+dev/zihasz/hyperion/util/hash/HashUtils.java
+ dev.zihasz.hyperion.util.hash.HashUtils
+dev/zihasz/hyperion/util/encoding/EncodingUtils.java
+ dev.zihasz.hyperion.util.encoding.EncodingUtils
+dev/zihasz/hyperion/util/type/ByteUtils.java
+ dev.zihasz.hyperion.util.type.ByteUtils
+dev/zihasz/hyperion/impl/wrapper/hashing/MD5.java
+ dev.zihasz.hyperion.impl.wrapper.hashing.MD5
+dev/zihasz/hyperion/util/encryption/EncryptionUtils.java
+ dev.zihasz.hyperion.util.encryption.EncryptionUtils
+dev/zihasz/hyperion/api/AbstractEncoding.java
+ dev.zihasz.hyperion.api.AbstractEncoding
+dev/zihasz/hyperion/impl/wrapper/hashing/SHA1.java
+ dev.zihasz.hyperion.impl.wrapper.hashing.SHA1
+dev/zihasz/hyperion/api/interfaces/IHash.java
+ dev.zihasz.hyperion.api.interfaces.IHash
+dev/zihasz/hyperion/impl/wrapper/hashing/SHA384.java
+ dev.zihasz.hyperion.impl.wrapper.hashing.SHA384
+dev/zihasz/hyperion/util/Util.java
+ dev.zihasz.hyperion.util.Util
+dev/zihasz/hyperion/impl/wrapper/encoding/Base64.java
+ dev.zihasz.hyperion.impl.wrapper.encoding.Base64
+dev/zihasz/hyperion/util/type/TextUtils.java
+ dev.zihasz.hyperion.util.type.TextUtils
+dev/zihasz/hyperion/api/interfaces/IEncoding.java
+ dev.zihasz.hyperion.api.interfaces.IEncoding
+dev/zihasz/hyperion/impl/encryption/AES.java
+ dev.zihasz.hyperion.impl.encryption.AES
+dev/zihasz/hyperion/impl/wrapper/hashing/SHA512.java
+ dev.zihasz.hyperion.impl.wrapper.hashing.SHA512
+dev/zihasz/hyperion/api/AbstractHash.java
+ dev.zihasz.hyperion.api.AbstractHash
+dev/zihasz/hyperion/impl/hashing/SHA256.java
+ dev.zihasz.hyperion.impl.hashing.SHA256
